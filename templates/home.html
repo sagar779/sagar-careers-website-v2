@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <style>
+      #banner{
+        height: 360px;
+        width: 100%;
+        object-fit:cover;
+      }
+     </style>
     <title> Sagar Careers</title>
     <style>
       h1{
@@ -26,13 +36,13 @@
         
       }
 
-      .bodytext{
+      p{
         font-family:Roboto;
         color: rgb(80,80,80);
       }
 
       #container{
-        max-width:720px;
+        max-width:1500px;
         margin-left: 0 auto;
         
       }
@@ -40,16 +50,20 @@
   </head>
   <body>
     <div id="container"> 
-    <h1>Sagar Careers</h1>
-    <img id="banner" src="https://sagar-careers-website.sagarrauthan.repl.co/static/banner.jpeg" height="320">
-    <h2> About Sagar</h2>
-    <p class="bodytext">
+    <h1 class="text-center mt-2 mb-4">Sagar Careers</h1>
+    <img class="img-fluid"  id="banner" src="https://sagar-careers-website.sagarrauthan.repl.co/static/banner.jpeg" height="320">
+    <h2 class="text-center mt-4 mb-2"> About Sagar</h2>
+    <p class="lead ">
       There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
     </p>
-    <h2>Open Positions</h2>
-    <p class="bodytext">TODO- Show the jobs here</p>
+    <h2 class="text-center mt-2 mb-4">Open Positions</h2>
+    <div >
+      {% for job in jobs %}
+        {% include 'jobitem.html' %}
+      {%  endfor%}
+    </div>
     <div style="text-align: center;">
-    <button> Contact US</button>
+    <button class="btn btn-primary btn-lg mb-4"> Contact US</button>
       <p> Copyright 2023, Sagar</p>
     </div>
     </div>
