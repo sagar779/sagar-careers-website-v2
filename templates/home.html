@@ -42,36 +42,37 @@
       }
 
       #container{
-        max-width:1500px;
-        margin-left: 0 auto;
+        max-width:720px;
+        margin: 0 auto 0 auto;
         
       }
     </style>
   </head>
-  <body>
+  <body style="background-color:beige;">
     {% include 'nav.html' %}
-    <div id="container"> 
-    <h1 class="text-center mt-2 mb-4">Sagar Careers</h1>
+     <h1 class="text-center mt-2 mb-4">SAGAR CAREER'S</h1>
     <img class="img-fluid"  id="banner" src="https://sagar-careers-website.sagarrauthan.repl.co/static/banner.jpeg" height="320">
-    <h2 class="text-center mt-4 mb-2"> About Sagar</h2>
+    <div id="container"> 
+   
+    <h2 class="text-center mt-4 mb-2" style="padding-top:20px; padding-bottom:10px"> <b>ABOUT SAGAR</b> </h2>
       <div class="row " style="margin-bottom:16px;">
         <div class="col-md-6">
     <p class=" lead ">
-      There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+      There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary,
     </p>
           </div >
         <div class=" d-none d-md-block col-md-4 col-6">
         <img src="/static/people.jpeg" style="height:320px;">
       </div>
       </div>
-    <h2 class="text-center mt-2 mb-4">Job Openings</h2>
+    <h2 class="text-center mt-2 mb-4"><b>JOB OPENING'S</b></h2>
     <div >
       {% for job in jobs %}
         {% include 'jobitem.html' %}
       {%  endfor%}
     </div>
     <div style="text-align: center; padding-top:20px;">
-    <a class="btn btn-primary btn-lg mb-4" href="mailto:sagarsinghroithan40@gmail.com?subject=Question%20about%20job%20opening&body=My%20name%3A%20%3Cyour%20name%20here%3E%0D%0A%0D%0AMy%20question%3A%20%3Center%20question%20here%3E"> Contact US</a>
+    <a class="btn btn-primary btn-lg mb-4" href="mailto:sagarsinghroithan40@gmail.com?subject=Question%20about%20job%20opening&body=My%20name%3A%20%3Cyour%20name%20here%3E%0D%0A%0D%0AMy%20question%3A%20%3Center%20question%20here%3E"> <b>CONTECT US</b></a>
     
     </div>
     </div>
